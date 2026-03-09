@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade clima</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header>
+        <h1>How's th sky looking today?</h1>
+    </header>
+    <section>
+        <!-- aqui fica o campo de pesquisa do dia. -->
+        <input class="campoBusca" id="campoBusca"  type="text" placeholder="Digite uma cidade">
+        <p id="mensagem"></p>
+        <button class="btnBusca" id="btnBusca" type="button">Serch</button>
+    </section>
+
+    <main>
+        <div class="card">
+            <div class="clima">
+                <!-- aqui vai ficar o nome da cidade e o clima -->
+                <div class="cidade-box"></div>
+
+            </div>
+
+            <div class="detalhes">
+                <!-- aqui vai ficar os detalhes tipo umidade, velocidade do vento, mm de chuva-->
+                <div class="det-box"></div>
+                <div class="det-box"></div>
+                <div class="det-box"></div>
+                <div class="det-box"></div>
+
+            </div>
+            <div class="previsaoSemana">
+                <div class="dia-box"></div>
+                <div class="dia-box"></div>
+                <div class="dia-box"></div>
+                <div class="dia-box"></div>
+                <div class="dia-box"></div>
+                <div class="dia-box"></div>
+                <div class="dia-box"></div>
+                <!-- aqui fica a temperatura ao longo da semana, acho melhor fazer com appendChild no js
+                 tem que ter 7 dias -->
+            </div>
+        </div>
+        <div class="card">
+            <section class="dia">
+                <h3>Previsão do dia</h3>
+                <!--seria intersante ter uma lista com os dias da semana e o dia que aparecese na option seja o dia atual, vi que quando vc
+                usa o .getDay() retorn o um número de 0 a 6 que usando isso para pegar o elemento da lista com os dias.  -->
+                <select class="select-dia">
+                <option value="sex">Segunda</option>
+                <option value="ter">Terça</option>
+                <option value="qua">Quarta</option>
+                <option value="qui">Quinta</option>
+                <option value="sex">Sexta</option>
+                <option value="sex">Sábado</option>
+                <option value="sex">Domingo</option>
+                </select>
+                
+            </section>
+        </div>
+    </main>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
