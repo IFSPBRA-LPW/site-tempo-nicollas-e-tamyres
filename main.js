@@ -1,5 +1,5 @@
-import buscarClima from "../script/controller/data.js"
-import view from "../script/view/view.js"
+import buscarClima from "./script/controller/data.js"
+import view from "./script/view/view.js"
 
 const btnBusca=document.getElementById("btnBusca")
 if(btnBusca){
