@@ -17,3 +17,6 @@ if(btnBusca){
         
     })
 }
+window.addEventListener("load", () => {
+    buscarClima("london")
+})

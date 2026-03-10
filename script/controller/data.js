@@ -11,9 +11,11 @@ async function buscarClima(cidade) {
         
         if(response.ok){
             const data= await response.json()
+            console.log("essa é a data: ",data)
             view.mostrarClima(data)
             view.mostrarDetalhe(data)
             view.mostrarPrevisaoSemana(data)
+            view.mostrarPrevisaoDia(data)
         }
 
     }catch(erro){

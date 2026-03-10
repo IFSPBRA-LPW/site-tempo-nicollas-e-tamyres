@@ -45,21 +45,21 @@
                  tem que ter 7 dias -->
             </div>
         </div>
-        <div class="card">
+        <div class="card" id="previsaoDia">
             <section class="dia">
                 <h3>Previsão do dia</h3>
-                <!--seria intersante ter uma lista com os dias da semana e o dia que aparecese na option seja o dia atual, vi que quando vc
-                usa o .getDay() retorn o um número de 0 a 6 que usando isso para pegar o elemento da lista com os dias.  -->
-                <select class="select-dia">
-                <option value="sex">Segunda</option>
-                <option value="ter">Terça</option>
-                <option value="qua">Quarta</option>
-                <option value="qui">Quinta</option>
-                <option value="sex">Sexta</option>
-                <option value="sex">Sábado</option>
-                <option value="sex">Domingo</option>
+
+                <select class="select-dia" id="selectDia">
+                    <option value="mon">Mon</option>
+                    <option value="tue">Tue</option>
+                    <option value="wed">Wed</option>
+                    <option value="thu">Thu</option>
+                    <option value="fri">Fri</option>
+                    <option value="sat">Sat</option>
+                    <option value="sun">Sun</option>
                 </select>
-                
+                <div id="horasPrevisao"></div>
+
             </section>
         </div>
     </main>

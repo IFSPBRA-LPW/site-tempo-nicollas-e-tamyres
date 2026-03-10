@@ -193,3 +193,25 @@ main{
     }
 
 }
+.select-dia{
+    margin-top:10px;
+    padding:6px 10px;
+    border-radius:6px;
+    border:none;
+    font-size:14px;
+}
+
+.horas{
+    margin-top:15px;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+}
+
+.temp-box{
+    background:#1b2550;
+    padding:8px;
+    border-radius:6px;
+    text-align:center;
+    font-size:14px;
+}
