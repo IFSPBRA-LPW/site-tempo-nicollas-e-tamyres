@@ -65,7 +65,6 @@ section{
     background:#3b5bdb;
 }
 
-/* MAIN LAYOUT */
 
 main{
     display:grid;
@@ -73,7 +72,6 @@ main{
     gap:25px;
 }
 
-/* CARDS */
 
 .card{
     background:#121739;
@@ -81,7 +79,6 @@ main{
     padding:20px;
 }
 
-/* CARD PRINCIPAL */
 
 .clima{
     background:linear-gradient(135deg,#4c6ef5,#3b3dbf);
@@ -95,7 +92,7 @@ main{
     font-size:1.4rem;
 }
 
-/* DETALHES */
+
 
 .detalhes{
     display:grid;
@@ -111,7 +108,7 @@ main{
     text-align:center;
 }
 
-/* PREVISÃO SEMANA */
+
 
 .previsaoSemana{
     display:grid;
@@ -132,7 +129,6 @@ main{
     gap:10px;
 }
 
-/* CARD LATERAL */
 
 .dia{
     display:flex;
@@ -152,7 +148,6 @@ main{
     color:white;
 }
 
-/* RESPONSIVO */
 
 @media (max-width:900px){
 
@@ -162,12 +157,11 @@ main{
 
 }
 
-/* MOBILE */
 
-@media (max-width:600px){
+@media (max-width:500px){
 
     header h1{
-        font-size:1.8rem;
+        font-size:1.5rem;
     }
 
     section{
@@ -185,11 +179,11 @@ main{
     }
 
     .detalhes{
-        grid-template-columns:1fr;
+        grid-template-columns:2fr;
     }
 
     .previsaoSemana{
-        grid-template-columns:repeat(3,1fr);
+        grid-template-columns:repeat(1,1fr);
     }
 
 }
@@ -214,4 +208,40 @@ main{
     border-radius:6px;
     text-align:center;
     font-size:14px;
+}
+
+.temp-box img {
+    width: 40px;
+}
+
+.dia-box img {
+    width: 50px;
+}
+
+.cidade-box img {
+    width: 80px;
+}
+
+.temp-box {
+    display: flex;
+    align-items: center;
+    gap: 18px;          /* espaço entre ícone e hora */
+    padding: 12px 16px; /* aumenta altura do bloco */
+}
+
+.temp-box img {
+    width: 28px;
+}
+
+.temp-box .hora {
+    min-width: 60px;    /* cria distância fixa entre horários */
+    font-weight: 500;
+}
+
+.temp-box .temp {
+    margin-left: auto;  /* joga temperatura pra direita */
+}
+
+.temp-box {
+    margin-bottom: 8px;
 }

@@ -5,10 +5,10 @@ const btnBusca=document.getElementById("btnBusca")
 if(btnBusca){
     btnBusca.addEventListener("click",()=>{
         const cidade=document.getElementById("campoBusca").value.trim()
-        console.log(`esse é o pais: ${cidade}`)
+        console.log(`esse é a cidade: ${cidade}`)
         if (cidade.length==0){
             //aqui pode ter uma função que mostre erro tem que ter uma cidade 
-            view.inputVazio("A cidade não pode estar vazia.")
+            view.inputVazio("A cidade não pode                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    estar vazia.")
             return
         }
         else{
