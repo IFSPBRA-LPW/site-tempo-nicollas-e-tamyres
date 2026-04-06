@@ -1,5 +1,4 @@
-// import dotenv from "dotenv"
-// dotenv.config()
+
 import view from "../view/view.js"
 
 async function buscarClima(cidade) {
